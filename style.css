@@ -1,0 +1,80 @@
+*{padding: 0%;margin: 0%;box-sizing: border-box;font-family: 'Poppins';}
+body{width: 100%;height: 100%;overflow-x: hidden; background-color: #E2DFE9;}
+
+.circleII {height: 24px; width: 24px; border-radius: 24px; background-color: #083344;position: fixed;top: 0; left: 0; pointer-events: none; z-index: 99999999; /* so that it stays on top of all other elements */} 
+
+#nav{position: fixed; top: 2%; left: 0%; width:100vw; height: 3vw; display: flex;justify-content: space-between;align-items: center;padding: 0vw 5vw; z-index: 1; background-color: #E2DFE9; border-top: 2px solid #000; border-bottom: 2px solid #000;}
+#nav a{font-size: 1vw;font-weight: 300; color: black; text-decoration: none; display: inline-block;}.nav span {position: relative; z-index: 1;} .nav span::before {content: ''; position: absolute; z-index: -1; top: 33%; bottom: 33%; left: -0.25em; right: -0.25em; background-color: #83b0e1; transform-origin: center left; transform: scaleX(0); transition: transform 0.2s ease-in-out;}.nav span:hover::before { transform: scaleX(1); transform-origin: center right;}
+
+#main{width: 100%;}
+
+.section-1 {height:5vh; width: 100vw; background-color: #E2DFE9; border-top: 2px solid #000; border-bottom: 2px solid #000; position:relative; display:flex;align-items: center; /*top: 102%; z-index: 11;*/ margin-top: 6vw; margin-bottom: 6vw; overflow:hidden;} 
+.team-copy{height: 50vh; margin-top:25vh;margin-bottom:25vh;margin-right: 0px;margin-left: 0px; overflow: hidden;} .team-copy0{display:flex; white-space:nowrap; overflow:hidden;} .team-copy0-wrap{font-size:3rem;letter-spacing:2px;line-height:15vh;padding-right:0.3em;margin:-0.3rem 0;} .team-copy0-wrap span {display:flex; align-items: center; gap: 2px; text-align: center;} .fa-sun, .fa-solid{font-size:1.5rem; position: relative; right:1%;}
+.team-copy0-wrap{animation:subLoop0 30s linear infinite;}
+@keyframes subLoop0{from{transform: translateX(0);}to{transform: translateX(-100%);}}
+
+
+.Home{height: 100vh;position: relative;} .Home-II{height: 80vh;position: relative;}
+
+.hero{position: relative; display: flex; justify-content: space-around; align-items: center; width: 100%;min-height: 80%;margin-top: 5vw;margin-bottom: 5vw;}
+.hero p{font-size: .5vw;margin: 5px;font-weight: 600;opacity: .8;} .hero h1{font-size: 2vw;} .hero h2{font-size: 4vw; font-weight: 300;}
+.herol{width: 13%;} .herolimg{width: 20vw;height: 20vw;overflow: hidden;} .herolimg img{width: 100%;height: 100%;object-fit: cover;}
+.heroc{width: 20%;} .herocimg{width: 30vw;height: 44vw;overflow: hidden;} .herocimg img{width: 100%;height: 100%;object-fit: cover;}
+.heror{width: 13%;} .herorimg{width: 20vw;height: 10vw;overflow: hidden;} .herorimg img{width: 100%;height: 100%;object-fit: cover;}
+.hero-II{width: 13%;} .hero-IIimg{width: 40vw;height: 40vw;overflow: hidden;} .hero-IIimg .img{width: 100%;height: 100%;object-fit: cover;}
+
+#Motive{height: 100vh;position: relative;margin-top: 100px;display: flex;justify-content: space-around;align-items: center;}
+#motivel{width: 30%;padding: 2%;} #motivep p{text-align: right;margin: 5px;font-size:1.5vw;font-weight: 800;} 
+#motivel span{display: inline-block; width: 5vw;height: 2vw;border-radius: 100px;margin: 0 10px;margin-bottom: -10px;overflow: hidden;background-color: #83b0e1;}
+#motiver{width: 40%;} #motiveimg{width: 100%;height: 100%;overflow: hidden;} #motiveimg img{width: 100%;height: 100%;object-fit: cover;}
+
+#Pricing{height: 75vh;position: relative; display: flex;justify-content: space-around;align-items: center;}
+#pricingl{width: 25vw;} #pricingimg{width: 100%;height: 25vw; overflow: hidden;} #pricing img{width: 100%;height: 100%;object-fit: cover;}
+.pricingr{width: 40%;} .pricingh{display: flex; align-items: center; flex-direction: column;} .pricingh h1{text-align: center;margin: 5px;font-size:4vw; font-weight: 900;} .pricingh span{text-align: center;margin: 5px;font-size:4vw; font-weight: 300; /*-webkit-text-stroke: 5px #E2DFE9;*/}
+
+.c-operation{position:relative;width:100%;height:fit-content;background:#E2DFE9;color:#000000;padding-top: 3vw; margin:-1px 0;} .center-line{margin:3rem 0;width:1px;height:7rem;background:rgba(0, 0, 0, 0.5);}
+
+.main-key-wrap{font-size:1.6rem;line-height:1.2em;}.main-con-wrap{font-size:2rem;line-height:1.2em;}
+.content-con {width: 100%; height: 100%; display: flex;overflow: hidden; flex-direction: column; align-items: center; justify-content: center; text-align: center;} /*.content-inner{width:90%;max-width:1200px;text-align:center;} .content-inner-con{width:100%;margin:0.8rem 0;}*/
+
+.footer{position:relative;display:flex;flex-direction:column;flex-wrap:wrap;align-items:center;width:100%; height: fit-content; background:#E2DFE9 ;color:#000000; padding:0 0 1rem; padding-bottom: 5vw;}.footer a{color:#000000;text-decoration:none;margin:0 1rem;}.foot-link{display:flex; flex-direction:column; justify-content: space-around; width: 100%;}.foot-link a{display:flex;justify-content:space-around;align-items:center;width:100%;padding:0.5em;/*margin:0.5rem;*/border-radius:1rem;color:#000000;text-decoration:none; margin-left: 0px;}.foot-copy{width:100%;text-align:center;margin:0rem 0;font-size:15vw;letter-spacing:-2px;line-height:0.9em;}
+.linethrough{margin-bottom: 3px; width: 100vw; display:flex; justify-content: space-around;} .linethrough a{text-decoration:line-through;} .top-plus{margin-top:0;} .tm{font-family:'Noto Sans KR',sans-serif;}
+.foot-link-II span {position: relative; z-index: 1; font-size:2vw;}.foot-link-II span::before {content: ''; position: absolute; z-index: -1; top: 33%; bottom: 33%; left: -0.25em; right: -0.25em; background-color: #83b0e1; transform-origin: center right; transform: scaleX(0); transition: transform 0.2s ease-in-out;} .foot-link-II span:hover::before { transform: scaleX(1); transform-origin: center left;}
+.foot-link-III span {position: relative; z-index: 1; font-size:1vw;}.foot-link-III span::before {content: ''; position: absolute; z-index: -1; top: 33%; bottom: 33%; left: -0.25em; right: -0.25em; background-color: #83b0e1; transform-origin: center right; transform: scaleX(0); transition: transform 0.2s ease-in-out;} .foot-link-III span:hover::before { transform: scaleX(1); transform-origin: center left;}
+
+/* CSS from other files */
+.loading{display:flex;align-items:center;justify-content:center;position:fixed;top:0;right:0;bottom:0;left:0;z-index:100;background:#E2DFE9;opacity:0;transition:0.5s;}
+.before-load .loading{opacity:1;}
+@keyframes loading-spin{100%{transform:rotate(360deg);}}
+@keyframes loading-circle-ani{0%{stroke-dashoffset:157;}75%{stroke-dashoffset:-147;}100%{stroke-dashoffset:-157;}}
+.loading-circle{width:100px;height:100px;animation:loading-spin 2s infinite;}
+.loading-circle img{width:100px;height:100px;}
+.loading-circle circle{stroke:#171010;stroke-width:4;stroke-dasharray:157,157;stroke-dashoffset:0;fill:transparent;animation:loading-circle-ani 1s infinite;}
+
+/* Media Queries for responsiveness */
+
+@media (orientation:portrait){
+    .hero{flex-direction: column;} .hero h1{font-size: 4vw;} .hero p{font-size: 2vw;}
+    .herol{width: 70%;} .herolimg{width: 70vw; height: 20vh;} 
+    .heroc{width: 70%; padding-top: 2vh;} .herocimg{width: 70vw; height: 75vh;}
+    .heror{width: 70%; padding-top: 2vh;} .herorimg{width: 70vw; height: 20vh;}
+    #nav{height: 10vw;}
+    #nav a{font-size: 4vw;font-weight: 300;} 
+    .section-1, .team-copy, .team-copy0{overflow:hidden;}
+    .team-copy0-wrap{font-size:1rem;}  
+    .team-copy0-wrap{animation:subLoop0 10s linear infinite;}
+    .fa-sun, .fa-solid{font-size:0.5rem;}
+    .Home{height: 100vh; padding-top: 5vh;} .Home-II{height: 100vh; padding-top: 5vh;}
+    #Motive{height: fit-content; flex-direction: column;} #motivel{width: 70%;} #motiver{width: 70%;} #motivep p{text-align: center;margin: 5px;font-size:3vw;}
+    #Pricing{flex-direction: column; height: 75vh;margin-bottom: 5vh;} #pricingl{width: 50vw;} #pricingimg{width: 100%;height: 50vw; display: flex; justify-content: center; align-items: center;} #pricing img{object-fit:cover; position: absolute; transform: translate(-50%, -50%);}
+    .pricingr{width: 40%;} .pricingh h1{font-size:6vw;} .pricingh span{font-size:6vw;}
+    .foot-copy span{font-size:11vw;}
+    .foot-link-II span {font-size:4vw;}
+    .foot-link-III span {font-size:4vw;}
+    .linethrough{margin-bottom: 3px;}
+}
+    
+@media (orientation:landscape){
+    .foot-link{flex-direction:row;}
+    .foot-copy{font-size:6vw;}
+}
