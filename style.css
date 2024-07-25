@@ -9,7 +9,7 @@ body{width: 100%;height: 100%;overflow-x: hidden; background-color: #E2DFE9;}
 #main{width: 100%;}
 
 .section-1 {height:5vh; width: 100vw; background-color: #E2DFE9; border-top: 2px solid #000; border-bottom: 2px solid #000; position:relative; display:flex;align-items: center; /*top: 102%; z-index: 11;*/ margin-top: 6vw; margin-bottom: 6vw; overflow:hidden;} 
-.team-copy{height: 50vh; margin-top:25vh;margin-bottom:25vh;margin-right: 0px;margin-left: 0px; overflow: hidden;} .team-copy0{display:flex; white-space:nowrap; overflow:hidden;} .team-copy0-wrap{font-size:3rem;letter-spacing:2px;line-height:15vh;padding-right:0.3em;margin:-0.3rem 0;} .team-copy0-wrap span {display:flex; align-items: center; gap: 2px; text-align: center;} .fa-sun, .fa-solid{font-size:1.5rem; position: relative; right:1%;}
+.team-copy{height: 50vh; margin-top:25vh;margin-bottom:25vh;margin-right: 0px;margin-left: 0px; overflow: hidden;} .team-copy0{display:flex; white-space:nowrap; overflow:hidden;} .team-copy0-wrap{font-size: 2rem;letter-spacing:2px;line-height:15vh;padding-right:0.3em;margin:-0.3rem 0;} .team-copy0-wrap span {display:flex; align-items: center; gap: 2px; text-align: center;} .fa-sun, .fa-solid{font-size:1.5rem; position: relative; right:1%;}
 .team-copy0-wrap{animation:subLoop0 30s linear infinite;}
 @keyframes subLoop0{from{transform: translateX(0);}to{transform: translateX(-100%);}}
 
