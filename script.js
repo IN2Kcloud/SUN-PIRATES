@@ -6,33 +6,53 @@ document.querySelector('.loading').addEventListener('transitionend', (e) => {
 });
 
 
+/*
+function splitText(selector) {
+  document.querySelectorAll(selector).forEach(el => {
+    const text = el.textContent;
+    el.innerHTML = text
+      .split("")
+      .map(char =>
+        char === " "
+          ? `<span class="char">&nbsp;</span>`
+          : `<span class="char">${char}</span>`
+      )
+      .join("");
+  });
+}
+
+splitText(".heroc h1");
+splitText(".herol h1");
+*/
+
+
 
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circleII");
 
 const colors = [
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
-  "#083344",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
+  "#83b0e1",
 ];
 
 circles.forEach(function (circle, index) {
@@ -93,13 +113,13 @@ gsap.from(".nlink",{
 })
 
 Shery.textAnimate(".heroc h1", {
-    style: 2,
-    y: 10,
-    delay: 0.2,
-    duration: .5,
-    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    multiplier: 0.1,
-  });
+  style: 2,
+  y: 20,
+  delay: 2,
+  duration: 2,
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  multiplier: 0.1,
+});
 
 gsap.from(".nlinkII",{
   stagger: .3,
