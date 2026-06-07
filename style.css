@@ -24,18 +24,9 @@ body{width: 100%;height: 100%;overflow-x: hidden; background-color: #E2DFE9; fon
 .herol{width: 13%;}
 .herol h1{font-family:'Hoshiko', 'Khaviax', "Inter", sans-serif;font-size: 5rem;}
 .herolimg{width: 20vw;height: 20vw;overflow: hidden;} .herolimg img{width: 100%;height: 100%;object-fit: cover;}
-.heroc{width: 80%;display: flex;align-items: center;justify-content: center;flex-direction: column;} .herocimg{width: 30vw;height: 44vw;overflow: hidden;} .herocimg img{width: 100%;height: 100%;object-fit: cover;}
+.heroc{width: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column;} .herocimg{width: 30vw;height: 44vw;overflow: hidden;} .herocimg img{width: 100%;height: 100%;object-fit: cover;}
 .heror{width: 13%;} .herorimg{width: 20vw;height: 10vw;overflow: hidden;} .herorimg img{width: 100%;height: 100%;object-fit: cover;}
 .hero-II{width: 13%;} .hero-IIimg{width: 40vw;height: 40vw;overflow: hidden;} .hero-IIimg .img{width: 100%;height: 100%;object-fit: cover;}
-.hero h1{
-  overflow:hidden;
-}
-.char{
-  display:inline-block;
-  transform:translateY(120%);
-  opacity:0;
-  will-change:transform,opacity;
-}
 
 #Motive{height: 100vh;position: relative;margin-top: 100px;display: flex;justify-content: space-around;align-items: center;}
 #motivel{width: 30%;padding: 2%;} 
@@ -90,9 +81,9 @@ body{width: 100%;height: 100%;overflow-x: hidden; background-color: #E2DFE9; fon
 /* Media Queries for responsiveness */
 
 @media (orientation:portrait){
-    .hero{flex-direction: column;} .hero h1{font-size: 4vw;} .hero p{font-size: 2vw;}
-    .herol{width: 70%;} .herolimg{width: 70vw; height: 20vh;} 
-    .heroc{width: 70%; padding-top: 2vh;} .herocimg{width: 70vw; height: 75vh;}
+    .hero{flex-direction: column;} .hero h1{font-size: 4rem;} .hero p{font-size: 2vw;}
+    .herol{width: 70%; height: fit-content;} .herolimg{width: 70vw; height: auto;} 
+    .heroc{width: 100%; padding-top: 2vh;} .herocimg{width: 70vw; height: 75vh;}
     .heror{width: 70%; padding-top: 2vh;} .herorimg{width: 70vw; height: 20vh;}
     #nav{height: 10vw;}
     #nav a{font-size: 4vw;font-weight: 300;} 
@@ -100,8 +91,8 @@ body{width: 100%;height: 100%;overflow-x: hidden; background-color: #E2DFE9; fon
     .team-copy0-wrap{font-size:1rem;}  
     .team-copy0-wrap{animation:subLoop0 10s linear infinite;}
     .fa-sun, .fa-solid{font-size:0.5rem;}
-    .Home{height: 100vh; padding-top: 5vh;} .Home-II{height: 100vh; padding-top: 5vh;}
-    #Motive{height: fit-content; flex-direction: column;} #motivel{width: 70%;} #motiver{width: 70%;} #motivep p{text-align: center;margin: 5px;font-size:3vw;}
+    .Home{height: 100vh; padding-top: 5vh;} .Home-II{height: 200vh; padding-top: 5vh;}
+    #Motive{height: fit-content; flex-direction: column;} #motivel{width: 90%;} #motiver{width: 90%;} #motivep p{text-align: center;margin: 5px;font-size:5vw;} #motivep span {font-size: 5rem;}
     #Pricing{flex-direction: column; height: 75vh;margin-bottom: 5vh;} #pricingl{width: 50vw;} #pricingimg{width: 100%;height: 50vw; display: flex; justify-content: center; align-items: center;} #pricing img{object-fit:cover; position: absolute; transform: translate(-50%, -50%);}
     .pricingr{width: 40%;} .pricingh h1{font-size:6vw;} .pricingh span{font-size:6vw;}
     .foot-copy span{font-size:11vw;}
