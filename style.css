@@ -3,16 +3,23 @@ body{width: 100%;height: 100%;overflow-x: hidden; background-color: #E2DFE9; fon
 @font-face { font-family:'Highrise'; src:url('./assets/HighriseFont-Bold-Demo.otf') format('opentype'); font-display:swap; }
 @font-face { font-family:'Hoshiko'; src:url('./assets/Hoshiko\ Satsuki.ttf') format('truetype'); font-display:swap; }
 @font-face { font-family:'Khaviax'; src: url('./assets/Khaviax.otf') format('opentype'); font-display: swap; }
+@font-face { font-family:'Highrise'; src: url('./assets/HighriseFont-Bold-Demo.otf') format('opentype'); font-display: swap; }
+@font-face { font-family:'Athena'; src: url('./assets/Athena-Regular\ \(PERSONAL\ USE\ ONLY\).ttf') format('truetype'); font-display: swap; }
+@font-face { font-family:'Khaviax'; src: url('./assets/Khaviax.otf') format('opentype'); font-display: swap; }
 
 .circleII {height: 24px; width: 24px; border-radius: 24px; background-color: #83b0e1;position: fixed;top: 0; left: 0; pointer-events: none; z-index: 99999999; /* so that it stays on top of all other elements */} 
 
 #nav{position: fixed; top: 2%; left: 0%; width:100vw; height: 5vw; display: flex;justify-content: space-between;align-items: center;padding: 0vw 5vw; z-index: 1; background-color: #000; border-top: 3px solid #E2DFE9; border-bottom: 3px solid #E2DFE9;box-shadow: 0 0 0 3px #000; mix-blend-mode: darken;}
-#nav a{font-size: 2vw;font-weight: 300; color: #fff; text-decoration: none; display: inline-block;}.nav span {position: relative; z-index: 1;} .nav span::before {content: ''; position: absolute; z-index: -1; top: 33%; bottom: 33%; left: -0.25em; right: -0.25em; background-color: #83b0e1; transform-origin: center left; transform: scaleX(0); transition: transform 0.2s ease-in-out;}.nav span:hover::before { transform: scaleX(1); transform-origin: center right;}
+#nav a{font-size: 2vw;font-weight: 300; color: #fff; text-decoration: none; display: inline-block; font-weight: lighter;}.nav span {position: relative; z-index: 1;} .nav span::before {content: ''; position: absolute; z-index: -1; top: 33%; bottom: 33%; left: -0.25em; right: -0.25em; background-color: #83b0e1; transform-origin: center left; transform: scaleX(0); transition: transform 0.2s ease-in-out;}.nav span:hover::before { transform: scaleX(1); transform-origin: center right;}
+#navleft a {font-family:'Hoshiko', 'Khaviax', "Inter", sans-serif;font-size: 2rem;}
 
 #main{width: 100%;}
 
-.section-1 {height:10vh; width: 100vw; background-color: #E2DFE9; border-top: 2px solid #000; border-bottom: 2px solid #000; position:relative; display:flex;align-items: center; /*top: 102%; z-index: 11;*/ margin-top: 5vw; margin-bottom: 2vw; overflow:hidden;} 
-.team-copy0{display:flex; white-space:nowrap; overflow:hidden;} .team-copy0-wrap{font-size: 1rem;letter-spacing:5px;line-height:15vh;padding-right:0.3em;margin:-0.3rem 0;} .team-copy0-wrap span {display:flex; align-items: center; gap: 2px; text-align: center;} .fa-sun, .fa-solid{font-size:1rem; position: relative; right:0%;}
+.section-1 {height:12vh; width: 100vw; background-color: #E2DFE9; border-top: 2px solid #000; border-bottom: 2px solid #000; position:relative; display:flex;align-items: center; /*top: 102%; z-index: 11;*/ margin-top: 5vw; margin-bottom: 2vw; overflow:hidden;} 
+.team-copy0{display:flex; white-space:nowrap; overflow:hidden;} 
+.team-copy0-wrap{font-family:'Highrise', 'Khaviax', "Inter", sans-serif;font-size: 8rem;letter-spacing:5px;line-height:1; padding-right:0.3em;margin:-0.3rem 0;} 
+.team-copy0-wrap span {display:flex; align-items: center; gap: 2px; text-align: center;} 
+.fa-sun, .fa-solid{font-size:3rem; position: relative; right:0%;}
 .team-copy0-wrap{animation:subLoop0 30s linear infinite;}
 @keyframes subLoop0{from{transform: translateX(0);}to{transform: translateX(-100%);}}
 
